@@ -34,9 +34,9 @@ export default function NewChallenge({ onDone }) {
       !challenge.deadline.trim() ||
       !challenge.image
     ) {
-      animate('input,textarea',{x:[-10,0,10,0]},
-        {type:'spring',duration:0.3,delay:stagger(0.08),stiffness:600}
-          )
+        animate('input,textarea',{x:[-10,0,10,0]},
+          {type:'spring',duration:0.3,delay:stagger(0.08),stiffness:600}
+            )
       return;
     }
 
